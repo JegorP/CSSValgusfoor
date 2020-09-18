@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+}
+
+.mainDiv {
+    background-color: rgb(0, 172, 252);
+    height: 650px;
+    width: 650px;
+    margin: 0 auto
+}
+.mainDiv > div {
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#red {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    animation-name: redAnim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes redAnim {
+    0% {top: -300px}
+    100% {top: 0px}
+}
+
+#yellow {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+#yellow:hover {
+    transform: rotateY(360deg);
+}
+
+
+#green {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    animation-delay: 1s;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    transition-property: transform;
+    transition-duration: 1s;
+
+}
+@keyframes btn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
